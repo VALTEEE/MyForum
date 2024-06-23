@@ -1,0 +1,12 @@
+Homepage (there are all the posts) be able to edit or delete own posts
+about page
+create post FORM PAGE / pop up thingy middle of screen that u still can see front page
+profile page where u can see ur own posts and delete em
+
+
+styling css
+
+
+
+
+
