@@ -16,6 +16,18 @@ app.use(bodyParser.json())
 
 app.set('view engine', 'ejs');
 
+app.get("/", (req, res) => {
+  res.render("index.ejs");
+});
+
+app.get("/about", (req, res) => {
+  res.render("about.ejs");
+});
+
+app.get("/profile", (req, res) => {
+  res.render("profile.ejs");
+});
+
 app.get('/createpost', (req, res) => {
   res.render('createPost');
 });

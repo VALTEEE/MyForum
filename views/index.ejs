@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
-  <link rel="stylesheet" href="../public/styles/main.css">
-</head>
-<body>
-  <header>
-    <h1 class="title-text">CAPSTONE PROJECT</h1>
-
-    <div class="login/singup">
-      <a href="#">Login</a>
-      <a href="#">Sign up</a>
-      <!--MAKE AN DROPDOWN MENU FROM IMAGE (profile pic) TO PROFILE, SETTINGS AND LOGOUT.-->
-    </div>
-
-
-  <div class="navbar">
-    <a class="nav1" href="#">Home</a>
-    <a class="nav2" href="#">About</a>
-    <a class="nav3" href="#">Profile</a>
-  </div>
-
+<%- include("partials/header.ejs") %>
 
   <div class="fav-side-bar">
   <h2>TOP 10 POSTS!</h2>
@@ -41,19 +17,19 @@
 
   </ul>
   </div>
-  </header>
 
-  <footer>
-    <p>copyrighted by valtee 2024</p>
-  </footer>
+  <div class="create-post">
+    <a href="/createpost"> <button class="btn-create-post">Create a Post</button> </a>
+  </div>
 
-
-
+  
 
 
 
 
 
+
+  <%- include("partials/footer.ejs") %>
   <script src="index.js"></script>
 </body>
 </html>
