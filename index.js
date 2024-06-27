@@ -30,6 +30,10 @@ app.get("/profile", (req, res) => {
   res.render("profile.ejs");
 });
 
+app.get("/login", (req, res) => {
+  res.render("login.ejs");
+});
+
 app.get('/createpost', (req, res) => {
   res.render('createPost');
 });

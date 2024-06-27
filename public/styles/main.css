@@ -7,6 +7,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .title-text a:visited {
   text-decoration: none;
   color: darkblue;
@@ -113,6 +117,15 @@ header {
     padding-bottom: 25px;
     text-align: center;
     justify-content: space-evenly;
+  }
+
+  .navbar a:visited {
+    text-decoration: none;
+    color: darkblue;
+  }
+  
+  .navbar a:active {
+    color: rgb(36, 36, 156);
   }
 
 
