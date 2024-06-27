@@ -7,6 +7,15 @@ a {
   text-decoration: none;
 }
 
+.title-text a:visited {
+  text-decoration: none;
+  color: darkblue;
+}
+
+.title-text a:active {
+  color: rgb(36, 36, 156);
+}
+
 header {
   background-color: blueviolet;
   margin-top: 0;
@@ -17,6 +26,7 @@ header {
     color: darkblue;
     margin-top: 0;
     padding-top: 1%;
+    
 }
 
 .dropdown-menu {
