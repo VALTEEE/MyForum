@@ -1,14 +1,22 @@
 body {
   min-height: 100vh;
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
   background-color: blueviolet;
+  margin-top: 0;
 }
 
 .title-text {
     text-align: center;
     color: darkblue;
+    margin-top: 0;
+    padding-top: 1%;
 }
 
 .dropdown-menu {
@@ -16,14 +24,14 @@ header {
   display: inline-block;
   float: right;
   right: 12%;
-  margin-top: -3%;
+  margin-top: -4%;
 }
 
 /* Hide the dropdown content by default */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: white;
+  background-color: lightblue;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -40,7 +48,7 @@ header {
 
 /* Change the color of the links on hover */
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: rgb(208, 232, 240);
 }
 
 /* Profile picture styling (optional, for better display) */
@@ -56,12 +64,34 @@ header {
 
   .login-singup {
     position: relative;
-    margin-top: -2%;
-    left: 93%;
+    margin-top: -3%;
+    left: 91%;
+    font-size: 1.1em;
   }
 
   .login {
     margin-right: 2%;
+    padding: 3px 8px 3px 8px;
+    border: 3px solid blue;
+    background-color: lightblue;
+    text-decoration: none;
+    color: rgb(74, 74, 245);
+  }
+  
+  .login:hover{
+    background-color: rgb(208, 232, 240);
+  }
+
+  .signup {
+    border: 3px solid blue;
+    padding: 3px 8px 3px 8px;
+    background-color: lightblue;
+    text-decoration: none;
+    color: rgb(74, 74, 245);
+  }
+
+  .signup:hover {
+    background-color: rgb(208, 232, 240);
   }
 
   .navbar {
@@ -76,6 +106,17 @@ header {
   }
 
 
+  .fav-side-bar {
+    display: inline-block;
+    border: black 3px solid;
+    min-width: 240px;
+    max-width: 650px;
+  }
+
+  .favorite {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
 
 
 
@@ -90,8 +131,20 @@ header {
   
   footer {
     margin-top: 40%;
-    padding-bottom: 20px;
+    padding-bottom: 2%;
     padding-top: 20px;
     background-color: red;
     font-size: 1.6em;
+}
+
+.logo {
+  position: relative;
+  margin-top: -2%;
+  margin-right: 1%;
+  float: right;
+  
+}
+
+.logo-linkedin {
+  margin-right: 2%;
 }
