@@ -14,6 +14,8 @@ const port = 3000;
 
 app.use(bodyParser.json())
 
+app.use(express.static(__dirname + '/public'));
+
 app.set('view engine', 'ejs');
 
 app.get("/", (req, res) => {
@@ -30,6 +32,10 @@ app.get("/profile", (req, res) => {
 
 app.get('/createpost', (req, res) => {
   res.render('createPost');
+});
+
+app.get("/settings", (req, res) => {
+  res.render("settings.ejs");
 });
 
 app.get('/posts', (req, res) => {

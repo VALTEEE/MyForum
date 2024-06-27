@@ -10,10 +10,52 @@
   <header>
     <h1 class="title-text">CAPSTONE PROJECT</h1>
 
-    <div class="login/singup">
-      <a href="#">Login</a>
-      <a href="#">Sign up</a>
-      <!--MAKE AN DROPDOWN MENU FROM IMAGE (profile pic) TO PROFILE, SETTINGS AND LOGOUT.-->
+    <div class="dropdown-menu">
+      <ul class="dropdown-ul">
+        <li class="dropdown-trigger">
+          <img src="/images/profile-placeholder.jpg" alt="Profile pic" class="profile-pic">
+          <ul class="dropdown-content">
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/settings">Settings</a></li>
+            <li><a href="/logout">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        // Get the dropdown trigger element
+        var trigger = document.querySelector('.dropdown-trigger');
+        
+        // Add a click event listener to the trigger
+        trigger.addEventListener('click', function(event) {
+          // Prevent the click event from propagating further
+          event.stopPropagation();
+      
+          // Toggle the display of the dropdown content
+          var dropdownContent = this.querySelector('.dropdown-content');
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      
+        // Close the dropdown if the user clicks outside of it
+        document.addEventListener('click', function() {
+          var dropdownContent = document.querySelector('.dropdown-content');
+          if (dropdownContent) {
+            dropdownContent.style.display = "none";
+          }
+        });
+      });
+      </script>
+      
+
+    <div class="login-singup">
+      <a class="login" href="#">Login</a>
+      <a class="signup" href="#">Sign up</a>
     </div>
 
 

@@ -1,3 +1,97 @@
 body {
+  min-height: 100vh;
+}
+
+header {
+  background-color: blueviolet;
+}
+
+.title-text {
+    text-align: center;
+    color: darkblue;
+}
+
+.dropdown-menu {
+  position: relative;
+  display: inline-block;
+  float: right;
+  right: 12%;
+  margin-top: -3%;
+}
+
+/* Hide the dropdown content by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 10px; /* Adjust to position the dropdown correctly */
+}
+
+/* Styling for the dropdown links */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change the color of the links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Profile picture styling (optional, for better display) */
+.profile-pic {
+  cursor: pointer;
+  height: 40px; /* Adjust size as needed */
+  width: 40px; /* Adjust size as needed */
+  border-radius: 50%;
+}
+
+
+
+
+  .login-singup {
+    position: relative;
+    margin-top: -2%;
+    left: 93%;
+  }
+
+  .login {
+    margin-right: 2%;
+  }
+
+  .navbar {
+    display: flex;
+    margin-top: 3%;
+    font-size: 1.5em;
+    background-color: grey;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  footer {
+    margin-top: 40%;
+    padding-bottom: 20px;
+    padding-top: 20px;
     background-color: red;
+    font-size: 1.6em;
 }
