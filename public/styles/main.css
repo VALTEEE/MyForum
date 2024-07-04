@@ -2,7 +2,7 @@ body {
   min-height: 100vh;
   margin-top: 0;
 }
-
+/* HEADER BELOW */
 a {
   text-decoration: none;
 }
@@ -129,11 +129,15 @@ header {
   }
 
 
+/* FRONT PAGE BELOW */
+
   .fav-side-bar {
+    position: relative;
     display: inline-block;
     border: black 3px solid;
     min-width: 240px;
     max-width: 650px;
+    margin-top: 1%;
   }
 
   .favorite {
@@ -141,8 +145,61 @@ header {
     font-size: 1.2em;
   }
 
+  .posting-area {
+    position: block;
+    border: solid black 3px;
+    padding-bottom: 10%;
+    margin-top: -15%;
+    margin-left: 35%;
+    margin-right: 35%;
+  }
 
+  .create-post {
+    position: relative;
+    float: right;
+    top: 180px;
+    right: 70px;
+  }
 
+  .create-post button {
+    display: inline-block;
+  padding: 8px 19px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(26, 1, 22);
+  background-color: rgb(138, 43, 226);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  z-index: 1;
+  }
+
+  .create-post button:hover { background-color: rgb(154, 76, 226);}
+
+.create-post button:active {
+  background-color: rgb(154, 76, 226);
+  box-shadow: 0 4px #666;
+  transform: translateY(4px);
+}
+
+/* CREATE POST PAGE BELOW */
+
+#name:hover::after {
+  content: attr(title);
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  top: 25px;
+  left: 0;
+  z-index: 10;
+  white-space: nowrap;
+}
   
   
   
@@ -150,8 +207,8 @@ header {
   
   
   
-  
-  
+  /*FOOTER BELOW*/
+
   footer {
     margin-top: 40%;
     padding-bottom: 2%;
